@@ -7,61 +7,62 @@
 
 @layer base {
   :root {
-    /* Cosmic Space Theme - Deep Space Colors */
-    --background: 230 23% 9%;
-    --foreground: 213 31% 91%;
+    /* Naruto Ninja Theme - Hidden Leaf Village Colors */
+    --background: 220 26% 14%;
+    --foreground: 36 45% 95%;
 
-    --card: 233 25% 12%;
-    --card-foreground: 213 31% 91%;
+    --card: 220 26% 18%;
+    --card-foreground: 36 45% 95%;
 
-    --popover: 233 25% 12%;
-    --popover-foreground: 213 31% 91%;
+    --popover: 220 26% 18%;
+    --popover-foreground: 36 45% 95%;
 
-    /* Primary - Cosmic Purple */
-    --primary: 270 91% 65%;
-    --primary-foreground: 213 31% 91%;
-    --primary-glow: 270 91% 75%;
+    /* Primary - Naruto Orange */
+    --primary: 25 95% 53%;
+    --primary-foreground: 220 26% 14%;
+    --primary-glow: 25 95% 65%;
 
-    /* Secondary - Nebula Pink */
-    --secondary: 328 85% 70%;
-    --secondary-foreground: 213 31% 91%;
+    /* Secondary - Ninja Blue */
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 36 45% 95%;
 
-    /* Accent - Stellar Cyan */
-    --accent: 189 94% 63%;
-    --accent-foreground: 230 23% 9%;
+    /* Accent - Sharingan Red */
+    --accent: 0 84% 60%;
+    --accent-foreground: 36 45% 95%;
 
     /* Neutral Tones */
-    --muted: 233 25% 15%;
-    --muted-foreground: 213 27% 72%;
+    --muted: 220 26% 21%;
+    --muted-foreground: 220 9% 70%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 213 31% 91%;
+    --destructive-foreground: 36 45% 95%;
 
-    --border: 233 25% 18%;
-    --input: 233 25% 18%;
-    --ring: 270 91% 65%;
+    --border: 220 26% 25%;
+    --input: 220 26% 25%;
+    --ring: 25 95% 53%;
 
     /* Custom Design Tokens */
-    --tech-gray: 213 27% 84%;
-    --success: 158 64% 52%;
+    --tech-gray: 220 9% 85%;
+    --success: 142 76% 36%;
     --warning: 43 96% 56%;
+    --ninja-gold: 45 100% 51%;
 
-    /* Cosmic Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    /* Ninja Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--ninja-gold)));
     --gradient-tech: linear-gradient(135deg, hsl(var(--secondary)), hsl(var(--primary)));
     --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
-    --gradient-card: linear-gradient(145deg, hsla(233, 25%, 12%, 0.9), hsla(233, 25%, 15%, 0.6));
-    --gradient-cosmic: linear-gradient(135deg, hsl(270, 91%, 65%), hsl(328, 85%, 70%), hsl(189, 94%, 63%));
-    --gradient-nebula: radial-gradient(ellipse at center, hsl(270, 91%, 65% / 0.3) 0%, transparent 70%);
+    --gradient-card: linear-gradient(145deg, hsla(220, 26%, 18%, 0.9), hsla(220, 26%, 21%, 0.6));
+    --gradient-ninja: linear-gradient(135deg, hsl(25, 95%, 53%), hsl(217, 91%, 60%), hsl(0, 84%, 60%));
+    --gradient-shadow: radial-gradient(ellipse at center, hsl(25, 95%, 53% / 0.3) 0%, transparent 70%);
 
-    /* Cosmic Shadows */
-    --shadow-sm: 0 1px 2px 0 rgba(189, 147, 249, 0.1);
-    --shadow-md: 0 4px 6px -1px rgba(189, 147, 249, 0.15), 0 2px 4px -1px rgba(168, 85, 247, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(189, 147, 249, 0.2), 0 4px 6px -2px rgba(168, 85, 247, 0.1);
-    --shadow-xl: 0 20px 25px -5px rgba(189, 147, 249, 0.25), 0 10px 10px -5px rgba(168, 85, 247, 0.15);
+    /* Ninja Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(255, 153, 51, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(255, 153, 51, 0.15), 0 2px 4px -1px rgba(255, 153, 51, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(255, 153, 51, 0.2), 0 4px 6px -2px rgba(255, 153, 51, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(255, 153, 51, 0.25), 0 10px 10px -5px rgba(255, 153, 51, 0.15);
     --shadow-glow: 0 0 30px hsl(var(--primary) / 0.4);
-    --shadow-tech: 0 8px 32px rgba(244, 114, 182, 0.3);
-    --shadow-cosmic: 0 0 50px hsl(var(--accent) / 0.3);
+    --shadow-tech: 0 8px 32px rgba(59, 130, 246, 0.3);
+    --shadow-ninja: 0 0 50px hsl(var(--accent) / 0.3);
 
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -172,24 +173,29 @@
   }
 
   .btn-gradient {
-    @apply bg-gradient-cosmic text-white font-semibold py-3 px-6 rounded-lg shadow-cosmic hover:shadow-glow transform hover:-translate-y-0.5 transition-all duration-300;
+    @apply bg-gradient-ninja text-background font-semibold py-3 px-6 rounded-lg shadow-ninja hover:shadow-glow transform hover:-translate-y-0.5 transition-all duration-300;
   }
 
   .skill-tag {
-    @apply bg-gradient-to-r from-primary/20 to-accent/20 border border-primary/30 text-foreground px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-cosmic backdrop-blur-sm;
+    @apply bg-gradient-to-r from-primary/20 to-secondary/20 border border-primary/30 text-foreground px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-ninja backdrop-blur-sm;
   }
 
-  .card-cosmic {
-    @apply bg-gradient-card backdrop-blur-md border border-primary/20 shadow-cosmic;
+  .card-ninja {
+    @apply bg-gradient-card backdrop-blur-md border border-primary/20 shadow-ninja;
   }
 
-  .stars-bg {
-    background-image: radial-gradient(2px 2px at 20px 30px, hsl(var(--accent)), transparent),
-                      radial-gradient(2px 2px at 40px 70px, hsl(var(--primary)), transparent),
-                      radial-gradient(1px 1px at 90px 40px, hsl(var(--secondary)), transparent),
-                      radial-gradient(1px 1px at 130px 80px, hsl(var(--accent)), transparent);
+  .ninja-bg {
+    background-image: radial-gradient(2px 2px at 20px 30px, hsl(var(--primary)), transparent),
+                      radial-gradient(2px 2px at 40px 70px, hsl(var(--secondary)), transparent),
+                      radial-gradient(1px 1px at 90px 40px, hsl(var(--accent)), transparent),
+                      radial-gradient(1px 1px at 130px 80px, hsl(var(--ninja-gold)), transparent);
     background-repeat: repeat;
     background-size: 200px 100px;
+  }
+
+  .kunai-pattern {
+    background-image: linear-gradient(45deg, transparent 40%, hsl(var(--primary) / 0.1) 40%, hsl(var(--primary) / 0.1) 60%, transparent 60%);
+    background-size: 20px 20px;
   }
 
   /* Animations */
