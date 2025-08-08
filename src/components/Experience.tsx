@@ -72,7 +72,9 @@ const Experience = () => {
                 {/* Timeline dot */}
                 <div className="absolute left-2 md:left-6 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg"></div>
                 
-                <div className="bg-card rounded-xl p-6 md:p-8 shadow-lg card-hover">
+                <div className="card-cosmic rounded-xl p-6 md:p-8 shadow-cosmic card-hover relative overflow-hidden">
+                  {/* Subtle glow effect */}
+                  <div className="absolute top-0 left-0 w-24 h-24 bg-gradient-primary rounded-full opacity-5 blur-2xl"></div>
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                     <div>
                       <h3 className="heading-md text-foreground mb-1">

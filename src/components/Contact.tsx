@@ -52,7 +52,7 @@ const Contact = () => {
                 <a
                   key={method.label}
                   href={method.href}
-                  className="bg-card rounded-xl p-6 shadow-lg card-hover text-left block animate-scale-in"
+                  className="card-cosmic rounded-xl p-6 shadow-cosmic card-hover text-left block animate-scale-in relative overflow-hidden"
                   style={{ animationDelay: `${index * 0.1}s` }}
                   target={method.href.startsWith('http') ? '_blank' : undefined}
                   rel={method.href.startsWith('http') ? 'noopener noreferrer' : undefined}
@@ -75,7 +75,9 @@ const Contact = () => {
             })}
           </div>
 
-          <div className="bg-card rounded-2xl p-8 shadow-xl card-glow">
+          <div className="card-cosmic rounded-2xl p-8 shadow-cosmic card-glow relative overflow-hidden">
+            {/* Cosmic glow effect */}
+            <div className="absolute bottom-0 right-0 w-40 h-40 bg-gradient-cosmic rounded-full opacity-10 blur-3xl"></div>
             <h3 className="heading-md mb-4 text-foreground">
               Ready to Start Your Project?
             </h3>

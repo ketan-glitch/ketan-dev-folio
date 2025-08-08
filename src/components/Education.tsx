@@ -26,7 +26,11 @@ const Education = () => {
   ];
 
   return (
-    <section className="py-20">
+    <section className="py-20 stars-bg relative">
+      {/* Cosmic ambiance */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/3 right-1/5 w-4 h-4 bg-secondary rounded-full opacity-20 animate-pulse" style={{ animationDelay: "0.5s" }}></div>
+      </div>
       <div className="container mx-auto px-6">
         <h2 className="heading-lg text-center mb-16 text-gradient-primary">
           Education & Qualifications
@@ -34,7 +38,7 @@ const Education = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Education */}
-          <div className="bg-card rounded-xl p-6 shadow-lg card-hover animate-scale-in">
+          <div className="card-cosmic rounded-xl p-6 shadow-cosmic card-hover animate-scale-in relative overflow-hidden">
             <div className="flex items-center gap-3 mb-6">
               <GraduationCap className="w-6 h-6 text-primary" />
               <h3 className="heading-md text-foreground">Education</h3>
@@ -58,7 +62,7 @@ const Education = () => {
           </div>
 
           {/* Certifications */}
-          <div className="bg-card rounded-xl p-6 shadow-lg card-hover animate-scale-in" style={{ animationDelay: "0.1s" }}>
+          <div className="card-cosmic rounded-xl p-6 shadow-cosmic card-hover animate-scale-in relative overflow-hidden" style={{ animationDelay: "0.1s" }}>
             <div className="flex items-center gap-3 mb-6">
               <Award className="w-6 h-6 text-accent" />
               <h3 className="heading-md text-foreground">Certifications</h3>
@@ -75,7 +79,7 @@ const Education = () => {
           </div>
 
           {/* Languages */}
-          <div className="bg-card rounded-xl p-6 shadow-lg card-hover animate-scale-in" style={{ animationDelay: "0.2s" }}>
+          <div className="card-cosmic rounded-xl p-6 shadow-cosmic card-hover animate-scale-in relative overflow-hidden" style={{ animationDelay: "0.2s" }}>
             <div className="flex items-center gap-3 mb-6">
               <Globe className="w-6 h-6 text-secondary" />
               <h3 className="heading-md text-foreground">Languages</h3>

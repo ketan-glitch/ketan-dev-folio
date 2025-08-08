@@ -27,7 +27,12 @@ const Skills = () => {
   ];
 
   return (
-    <section className="py-20">
+    <section className="py-20 stars-bg relative">
+      {/* Floating cosmic elements */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 left-1/3 w-3 h-3 bg-primary rounded-full opacity-30 animate-pulse"></div>
+        <div className="absolute bottom-32 right-1/4 w-2 h-2 bg-accent rounded-full opacity-40 animate-pulse" style={{ animationDelay: "1.5s" }}></div>
+      </div>
       <div className="container mx-auto px-6">
         <h2 className="heading-lg text-center mb-16 text-gradient-primary">
           Core Competencies
@@ -37,7 +42,7 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div 
               key={category.title}
-              className="bg-card rounded-xl p-6 shadow-lg card-hover animate-scale-in"
+              className="card-cosmic rounded-xl p-6 shadow-cosmic card-hover animate-scale-in relative overflow-hidden"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <h3 className="heading-md mb-4 text-foreground">
