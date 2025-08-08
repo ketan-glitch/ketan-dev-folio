@@ -76,13 +76,13 @@ export default {
 				'gradient-tech': 'var(--gradient-tech)',
 				'gradient-subtle': 'var(--gradient-subtle)',
 				'gradient-card': 'var(--gradient-card)',
-				'gradient-ninja': 'var(--gradient-ninja)',
-				'gradient-shadow': 'var(--gradient-shadow)'
+				'gradient-cosmic': 'var(--gradient-cosmic)',
+				'gradient-nebula': 'var(--gradient-nebula)'
 			},
 			boxShadow: {
 				'glow': 'var(--shadow-glow)',
 				'tech': 'var(--shadow-tech)',
-				'ninja': 'var(--shadow-ninja)'
+				'cosmic': 'var(--shadow-cosmic)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
