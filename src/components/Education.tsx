@@ -26,74 +26,71 @@ const Education = () => {
   ];
 
   return (
-    <section className="py-20 ninja-bg relative">
-      {/* Ninja ambiance */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/3 right-1/5 w-4 h-4 bg-secondary rounded-full opacity-20 animate-pulse" style={{ animationDelay: "0.5s" }}></div>
-      </div>
+    <section id="education" className="relative py-20 kakashi-bg overflow-hidden">
+      {/* Professional floating elements */}
+      <div className="absolute top-16 right-16 w-24 h-24 bg-gradient-primary rounded-full opacity-10 blur-xl animate-float"></div>
+      <div className="absolute bottom-16 left-16 w-20 h-20 bg-gradient-tech rounded-full opacity-8 blur-xl animate-float" style={{ animationDelay: "3s" }}></div>
+      
       <div className="container mx-auto px-6">
-        <h2 className="heading-lg text-center mb-16 text-gradient-primary">
-          Education & Qualifications
-        </h2>
-        
+        <div className="text-center mb-16">
+          <h2 className="heading-xl text-gradient-kakashi mb-4 animate-fade-in-up">
+            Education & Qualifications
+          </h2>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Education */}
-          <div className="card-ninja rounded-xl p-6 shadow-ninja card-hover animate-scale-in relative overflow-hidden">
+          <div className="card-professional animate-scale-in group">
             <div className="flex items-center gap-3 mb-6">
-              <GraduationCap className="w-6 h-6 text-primary" />
-              <h3 className="heading-md text-foreground">Education</h3>
+              <GraduationCap className="w-6 h-6 icon-glow" />
+              <h3 className="heading-md text-primary group-hover:text-accent transition-colors duration-300">
+                Education
+              </h3>
             </div>
-            
             <div className="space-y-6">
               {education.map((edu, index) => (
-                <div key={index} className="border-l-2 border-primary/30 pl-4">
-                  <h4 className="font-semibold text-foreground mb-1">
-                    {edu.degree}
-                  </h4>
-                  <p className="text-muted-foreground mb-1">
-                    {edu.institution}
-                  </p>
-                  <p className="text-sm text-primary font-medium">
-                    {edu.duration}
-                  </p>
+                <div key={index} className="border-l-2 border-primary/20 pl-4 hover:border-primary/40 transition-colors duration-300">
+                  <h4 className="font-semibold text-foreground mb-1">{edu.degree}</h4>
+                  <p className="text-accent text-sm font-medium mb-1">{edu.institution}</p>
+                  <p className="text-muted-foreground text-sm">{edu.duration}</p>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Certifications */}
-          <div className="card-ninja rounded-xl p-6 shadow-ninja card-hover animate-scale-in relative overflow-hidden" style={{ animationDelay: "0.1s" }}>
+          <div className="card-professional animate-scale-in group" style={{ animationDelay: "0.2s" }}>
             <div className="flex items-center gap-3 mb-6">
-              <Award className="w-6 h-6 text-accent" />
-              <h3 className="heading-md text-foreground">Certifications</h3>
+              <Award className="w-6 h-6 icon-glow" />
+              <h3 className="heading-md text-primary group-hover:text-accent transition-colors duration-300">
+                Certifications
+              </h3>
             </div>
-            
             <div className="space-y-4">
               {certifications.map((cert, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-foreground/90">{cert}</p>
+                <div key={index} className="flex items-start gap-3 p-3 rounded-lg hover:bg-primary/5 transition-colors duration-300">
+                  <div className="w-2 h-2 bg-accent rounded-full mt-2 flex-shrink-0 shadow-glow"></div>
+                  <span className="text-muted-foreground text-sm leading-relaxed">{cert}</span>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Languages */}
-          <div className="card-ninja rounded-xl p-6 shadow-ninja card-hover animate-scale-in relative overflow-hidden" style={{ animationDelay: "0.2s" }}>
+          <div className="card-professional animate-scale-in group" style={{ animationDelay: "0.4s" }}>
             <div className="flex items-center gap-3 mb-6">
-              <Globe className="w-6 h-6 text-secondary" />
-              <h3 className="heading-md text-foreground">Languages</h3>
+              <Globe className="w-6 h-6 icon-glow" />
+              <h3 className="heading-md text-primary group-hover:text-accent transition-colors duration-300">
+                Languages
+              </h3>
             </div>
-            
             <div className="space-y-4">
               {languages.map((lang, index) => (
-                <div key={index}>
-                  <div className="flex justify-between items-center mb-1">
-                    <span className="font-medium text-foreground">{lang.language}</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">
+                <div key={index} className="flex items-center justify-between p-3 rounded-lg hover:bg-primary/5 transition-colors duration-300">
+                  <span className="text-foreground font-medium">{lang.language}</span>
+                  <span className="text-accent text-sm font-medium px-3 py-1 bg-accent/10 rounded-full">
                     {lang.proficiency}
-                  </p>
+                  </span>
                 </div>
               ))}
             </div>

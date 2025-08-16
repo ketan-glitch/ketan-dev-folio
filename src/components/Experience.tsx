@@ -52,68 +52,69 @@ const Experience = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-subtle">
+    <section id="experience" className="relative py-20 bg-gradient-subtle">
       <div className="container mx-auto px-6">
-        <h2 className="heading-lg text-center mb-16 text-gradient-tech">
-          Professional Experience
-        </h2>
-        
+        <div className="text-center mb-16">
+          <h2 className="heading-xl text-gradient-tech mb-4 animate-fade-in-up">
+            Professional Experience
+          </h2>
+        </div>
+
         <div className="max-w-4xl mx-auto">
           <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-4 md:left-8 top-0 bottom-0 w-0.5 bg-gradient-primary"></div>
+            {/* Professional Timeline Line */}
+            <div className="absolute left-8 top-0 bottom-0 w-0.5 timeline-line opacity-60"></div>
             
-            {experiences.map((exp, index) => (
-              <div 
-                key={`${exp.company}-${exp.duration}`}
-                className="relative pl-12 md:pl-20 pb-12 animate-fade-in-up"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                {/* Timeline dot */}
-                <div className="absolute left-2 md:left-6 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg"></div>
-                
-                <div className="card-ninja rounded-xl p-6 md:p-8 shadow-ninja card-hover relative overflow-hidden">
-                  {/* Subtle glow effect */}
-                  <div className="absolute top-0 left-0 w-24 h-24 bg-gradient-primary rounded-full opacity-5 blur-2xl"></div>
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                    <div>
-                      <h3 className="heading-md text-foreground mb-1">
-                        {exp.position}
-                      </h3>
-                      <div className="flex items-center gap-2 text-primary font-semibold">
-                        <Building className="w-4 h-4" />
-                        <span>{exp.company}</span>
-                        {exp.current && (
-                          <span className="bg-success text-white px-2 py-1 rounded-full text-xs font-medium">
-                            Current
-                          </span>
-                        )}
+            <div className="space-y-12">
+              {experiences.map((experience, index) => (
+                <div 
+                  key={index} 
+                  className="relative pl-20 animate-fade-in-up"
+                  style={{ animationDelay: `${index * 0.3}s` }}
+                >
+                  {/* Professional Timeline Marker */}
+                  <div className="absolute left-6 top-6 timeline-marker animate-glow-pulse"></div>
+                  
+                  <div className="card-professional group">
+                    <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                      <div>
+                        <h3 className="heading-md text-primary group-hover:text-accent transition-colors duration-300 mb-2">
+                          {experience.position}
+                        </h3>
+                        <div className="flex items-center gap-2 text-accent font-medium mb-2">
+                          <Building className="w-4 h-4 icon-glow" />
+                          <span>{experience.company}</span>
+                          {experience.current && (
+                            <span className="bg-success text-white px-2 py-1 rounded-full text-xs font-medium">
+                              Current
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                      <div className="flex flex-col md:items-end text-muted-foreground text-sm">
+                        <div className="flex items-center gap-2 mb-1">
+                          <Calendar className="w-4 h-4 icon-glow" />
+                          <span>{experience.duration}</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <MapPin className="w-4 h-4 icon-glow" />
+                          <span>{experience.location}</span>
+                        </div>
                       </div>
                     </div>
+                    
+                    <ul className="space-y-3">
+                      {experience.highlights.map((highlight, highlightIndex) => (
+                        <li key={highlightIndex} className="flex items-start gap-3 text-muted-foreground">
+                          <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0 shadow-glow"></div>
+                          <span className="leading-relaxed">{highlight}</span>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                  
-                  <div className="flex flex-col md:flex-row gap-4 mb-4 text-muted-foreground">
-                    <div className="flex items-center gap-2">
-                      <Calendar className="w-4 h-4" />
-                      <span>{exp.duration}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <MapPin className="w-4 h-4" />
-                      <span>{exp.location}</span>
-                    </div>
-                  </div>
-                  
-                  <ul className="space-y-2">
-                    {exp.highlights.map((highlight, i) => (
-                      <li key={i} className="flex items-start gap-3 text-foreground/90">
-                        <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                        <span>{highlight}</span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

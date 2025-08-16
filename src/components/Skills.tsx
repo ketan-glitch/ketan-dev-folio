@@ -27,30 +27,31 @@ const Skills = () => {
   ];
 
   return (
-    <section className="py-20 ninja-bg relative">
-      {/* Floating ninja elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-1/3 w-3 h-3 bg-primary rounded-full opacity-30 animate-pulse"></div>
-        <div className="absolute bottom-32 right-1/4 w-2 h-2 bg-accent rounded-full opacity-40 animate-pulse" style={{ animationDelay: "1.5s" }}></div>
-      </div>
+    <section id="skills" className="relative py-20 kakashi-bg">
+      {/* Professional floating elements */}
+      <div className="absolute top-20 left-20 w-20 h-20 bg-gradient-primary rounded-full opacity-10 blur-xl animate-float"></div>
+      <div className="absolute bottom-20 right-20 w-28 h-28 bg-gradient-tech rounded-full opacity-8 blur-xl animate-float" style={{ animationDelay: "2s" }}></div>
+      
       <div className="container mx-auto px-6">
-        <h2 className="heading-lg text-center mb-16 text-gradient-primary">
-          Core Competencies
-        </h2>
+        <div className="text-center mb-16">
+          <h2 className="heading-xl text-gradient-kakashi mb-4 animate-fade-in-up">
+            Core Competencies
+          </h2>
+        </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {skillCategories.map((category, index) => (
             <div 
-              key={category.title}
-              className="card-ninja rounded-xl p-6 shadow-ninja card-hover animate-scale-in relative overflow-hidden"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              key={category.title} 
+              className="card-professional animate-scale-in group"
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <h3 className="heading-md mb-4 text-foreground">
+              <h3 className="heading-md text-primary mb-6 group-hover:text-accent transition-colors duration-300">
                 {category.title}
               </h3>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-3">
                 {category.skills.map((skill) => (
-                  <span key={skill} className="skill-tag">
+                  <span key={skill} className="skill-tag-pro">
                     {skill}
                   </span>
                 ))}

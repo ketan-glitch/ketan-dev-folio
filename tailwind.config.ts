@@ -20,6 +20,7 @@ export default {
 		extend: {
 			fontFamily: {
 				'inter': ['Inter', 'sans-serif'],
+				'oxanium': ['Oxanium', 'sans-serif'],
 				'space-grotesk': ['Space Grotesk', 'sans-serif'],
 			},
 			colors: {
@@ -68,6 +69,8 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				'tech-gray': 'hsl(var(--tech-gray))',
+				'kakashi-silver': 'hsl(var(--kakashi-silver))',
+				'sharingan-red': 'hsl(var(--sharingan-red))',
 				success: 'hsl(var(--success))',
 				warning: 'hsl(var(--warning))'
 			},
@@ -76,13 +79,14 @@ export default {
 				'gradient-tech': 'var(--gradient-tech)',
 				'gradient-subtle': 'var(--gradient-subtle)',
 				'gradient-card': 'var(--gradient-card)',
-				'gradient-ninja': 'var(--gradient-ninja)',
-				'gradient-shadow': 'var(--gradient-shadow)'
+				'gradient-kakashi': 'var(--gradient-kakashi)',
+				'gradient-shadow': 'var(--gradient-shadow)',
+				'gradient-mist': 'var(--gradient-mist)'
 			},
 			boxShadow: {
 				'glow': 'var(--shadow-glow)',
 				'tech': 'var(--shadow-tech)',
-				'ninja': 'var(--shadow-ninja)'
+				'kakashi': 'var(--shadow-kakashi)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
