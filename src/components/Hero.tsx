@@ -1,20 +1,14 @@
 import { Mail, MapPin, Phone, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import kakashiHeroBg from "@/assets/kakashi-hero-bg.jpg";
 
 const Hero = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Kakashi Background with Professional Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={kakashiHeroBg}
-          alt="Professional ninja village silhouette at dusk"
-          className="w-full h-full object-cover opacity-60"
-        />
-        <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/75 to-background/95"></div>
+      {/* Kakashi Professional Background */}
+      <div className="absolute inset-0 z-0 kakashi-bg">
+        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/85 to-background/90"></div>
         {/* Mist overlay */}
-        <div className="absolute inset-0 mist-overlay opacity-30"></div>
+        <div className="absolute inset-0 mist-overlay opacity-40"></div>
       </div>
 
       {/* Content */}
