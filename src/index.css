@@ -190,7 +190,7 @@
   }
 
   .skill-tag-pro {
-    @apply bg-gradient-to-r from-primary/15 to-kakashi-silver/15 border border-primary/25 text-foreground px-5 py-3 rounded-full text-sm font-medium transition-all duration-400 hover:scale-110 hover:shadow-glow hover:border-primary/40 backdrop-blur-md;
+    @apply bg-gradient-to-r from-primary/15 to-kakashi-silver/15 border border-primary/25 text-foreground px-5 py-3 rounded-full text-sm font-medium transition-all duration-300 hover:scale-110 hover:shadow-glow hover:border-primary/40 backdrop-blur-md;
   }
 
   .timeline-line {
