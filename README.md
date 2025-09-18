@@ -1,73 +1,48 @@
-# Welcome to your Lovable project
+# 🚀 Ketan Kadam | Portfolio  
 
-## Project info
+Welcome to my portfolio repository!  
+I’m **Ketan Kadam**, a passionate **Senior Flutter Developer** with expertise in building scalable, high-performance mobile apps that deliver seamless user experiences.  
 
-**URL**: https://lovable.dev/projects/0b3a81d9-0d63-47df-add8-de8ffb59befd
+---
 
-## How can I edit this code?
+## 👨‍💻 About Me  
+- 💼 Currently working at **WhizzAct Pvt Ltd**, deployed at **Logixal Inc.** (Mumbai).  
+- 📱 4+ years of experience in **Flutter development** – from startups to enterprise-level projects.  
+- 🛠️ Skilled in **Flutter, Dart, Firebase, REST APIs, SQLite, Provider, Riverpod, Bloc, Clean Architecture, and CI/CD pipelines**.  
+- 🌱 Constantly learning and experimenting with new tools & technologies.  
+- ✨ Strong believer in clean code, scalable design, and performance optimization.  
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 📂 Featured Projects  
+Here are some of the projects you’ll find in this repo (and my portfolio):  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0b3a81d9-0d63-47df-add8-de8ffb59befd) and start prompting.
+- 📲 **Billing App MVP** – Simplified invoicing, inventory & customer management app for Indian SMEs.  
+- 🧾 **PDF & WhatsApp Integration** – Automated billing and sharing features built directly into Flutter apps.  
+- 📰 **News App** – Smooth and optimized app with caching, infinite scroll, and real-time updates.  
+- 💡 **Personal Projects** – Exploring **animations, design patterns, state management**, and **open-source contributions**.  
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🛠️ Tech Stack  
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)  
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)  
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)  
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)  
+![REST API](https://img.shields.io/badge/REST-02569B?style=for-the-badge&logo=postman&logoColor=white)  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🌐 Connect With Me  
+- 💼 [LinkedIn](https://www.linkedin.com/in/ktn-dev/)  
+- 🖥️ [Portfolio Website](https://ketan-glitch.github.io/ketan-dev-folio/)  
+- 📧 **ketank39@gmail.com**  
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## ⚡ Fun Fact  
+I love transforming **complex problems into elegant solutions** and exploring **anime-inspired creative projects** outside of coding 🎨.  
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/0b3a81d9-0d63-47df-add8-de8ffb59befd) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+⭐ If you like my work, don’t forget to **star this repo** and connect with me!  
